@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Model\Trajectory.cs" />
     <Compile Include="Assets\Scripts\Model\Universe.cs" />
     <Compile Include="Assets\Scripts\View\ViewProbe.cs" />
+    <Compile Include="Assets\Scripts\View\ViewTrajectory.cs" />
     <Compile Include="Assets\Scripts\View\ViewUniverse.cs" />
     <None Include="Assets\Scripts\Scripts.asmdef" />
     <Reference Include="UnityEditor.UI">

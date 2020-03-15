@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Universe {
 
-    float time = 0; // seconds
+    /* Accessed by all Views */
+    public static float time = 0; // seconds
 
     private static int lastID = 0;
     public static int UniqueID() { return lastID++; }

@@ -13,16 +13,13 @@ public class ViewUniverse : MonoBehaviour
     void Start()
     {
         Probe probe = new Probe(1, new Trajectory());
-        viewProbe.probe = probe;
+        viewProbe.Init(probe);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Calculate the next state of the simulation
-        float time = universe.Tick(Time.deltaTime);
-
-        // Set the position of monobehaviour objects
-        viewProbe.UpdatePosition(time);
+        // Progress the universe at a chosen rate
+        universe.Tick(Time.deltaTime);
     }
 }
